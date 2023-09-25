@@ -4,6 +4,9 @@ import "./App.css";
 import LoginSignup from "./LoginSignup";
 import PaymentForm from "./PaymentForm";
 import ProductSearch from "./ProductSearch";
+import RegisterForm from "./RegisterForm";
+import ProductList from "./ProductList";
+import CheckoutForm from "./CheckoutForm";
 const clothesData = [
   {
     id: 1,
@@ -102,7 +105,7 @@ const App = () => {
               </div>
               <button
                 onClick={() => removeFromCart(clothes)}
-                className="ml-auto bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                className="ml-auto bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
               >
                 Remove
               </button>
@@ -113,6 +116,9 @@ const App = () => {
       <LoginSignup />
       <PaymentForm />
       <ProductSearch />
+      <RegisterForm/>
+      <ProductList/>
+      <CheckoutForm/>
     </div>
   );
 };
